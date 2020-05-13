@@ -1,0 +1,406 @@
+#navbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	
+}
+
+#navbar img{
+	width:70px;
+}
+
+#navbar li:not(:first-child){
+	float: right;
+}
+#navbar li{
+	float: left;
+}
+
+
+#navbar li a{
+	text-decoration:none;
+	padding:10px;
+	color:white;
+	font-family:verdana;
+	font-size:18px;
+}
+
+#actnav{
+	border: 2px solid red;
+}
+
+#navbar li:not(#actnav) a:hover{
+	border:2px solid purple;
+}
+
+
+#cityLi li a{
+	color:#000e1a;
+	
+}
+#placesLi li a{
+	color:#FF1493;
+	
+}
+
+#placesLi li a:hover{
+	color:#9400D3;
+}
+
+#govLi li a{
+	color:#FF8C00
+}
+		
+
+#homepage{
+	background-image:url("images/9.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+#city{
+	font-family:calibri;
+	background-image:url('images/old2.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;	
+}
+
+
+
+#places{
+	background-image:url("images/22.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+/*tab image gallery for places.html*/
+/* The grid: Four equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+	height:50%;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+	filter:grayscale(100%);
+	width:100%;
+	height:100%;
+		transition:1s;	
+}
+
+.column img:hover {
+    opacity: 1;
+	filter:grayscale(0);
+	 transform:scale(1.1);
+}
+/*for places.html*/
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: fixed;
+    display: none;
+	width:900px;
+	height:900px;
+	margin:auto;
+	top:50px;
+	left:50px;
+	z-index:999;
+	
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color:darkblue;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+/*end of tab gallery*/
+
+
+#description h1{
+	color:#000e1a;
+	font-family:verdana;
+	text-align:center;
+	text-shadow: 0px 0px 25px blue;
+	padding: 20px;
+	}
+	
+#description p{
+	color:#cce7ff;
+	font-size:19px;
+	padding-bottom:25px;
+	box-shadow: 0px 2px 10px 1px darkblue;
+	border-radius: 15px 0px 15px 0px;
+	padding: 10px;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 60%;
+	border:none;
+	margin:auto;
+	
+	
+}
+#culture{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#weather{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#weather p{
+	color:white;
+	padding: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 50px;
+	box-shadow: 0px 2px 10px 1px gray;
+	border-radius: 15px 0px 15px 0px;
+	font-family: calibri;
+	border: none;
+
+}
+
+#weather h1{
+	font-family:calibri;
+	color:#00FFFF;
+	text-shadow: 0px 0px 25px blue;
+	padding: 20px;
+	text-align:center;
+	}
+
+#weather img{
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px black;
+}
+#homepage blockquote{
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:50px;
+	padding-bottom:30px;
+	font-size:30px;
+	font-family:calibri;
+	color:white;
+	width:60%;
+	text-shadow: 0px 0px 25px gray;
+	margin-bottom:50px;
+	box-shadow: 0px 2px 10px 3px cyan;
+	border-radius: 15px 0px 15px 0px;
+	border:none;
+	}
+
+#governB{
+	background-image:url("images/nn.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+#governB h1{
+	color:#ff981a;
+	text-align:center;
+	margin:auto;
+	padding-bottom:20px;
+
+}
+#governB p{
+	color:#F0FFFF;
+	font-size:19px;
+	padding: 10px;
+	padding-left:3%;
+	padding-right: 3%;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 50px;
+	box-shadow: 0px 2px 10px 1px red;
+	border-radius: 15px 0px 15px 0px;
+	font-family: calibri;
+	border: none;
+	
+}
+#govLi h1{
+	font-family:verdana;
+	color:#00ff00;
+	text-shadow: 0px 0px 25px red;
+	padding: 20px;
+}
+
+
+#about{
+	background-image:url("images/silder-sri-lanka-galle.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#cultureLi li a{
+	color:#663399;
+}
+#cultureLi a:hover{
+	color:
+}
+
+#culture h1{
+	color:#FF4500;
+	font-family:helvetica;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:20px;
+	text-shadow: 0px 0px 25px yellow;
+}
+#culture p{
+	color:#FAFAD2;
+	font-size:19px;
+	padding-bottom:25px;
+	box-shadow: 0px 2px 10px 1px lightblue;
+	border-radius: 15px 0px 15px 0px;
+	padding: 10px;
+	padding-top:30px;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 60%;
+	border:none;
+	margin:auto;
+}
+
+#culture button{
+	width: 100px;
+	height: 50px;
+	margin:50px;
+	font-size:15px;
+	background-color:#00FF7F;
+	font-family:verdana;
+	color:blue;
+	box-shadow: 0px 0px 5px 2px blue;
+	cursor:pointer;
+	border-radius:15px;
+	border:none;
+}
+
+
+#sri{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#sriLi li a{
+	color:white;
+}
+
+#sriLi li a:hover{
+	color:red;
+	}
+*{
+    box-sizing: border-box;
+}
+
+	
+	
+/*tab image gallery of culture2.html*/
+
+/* The grid: Four equal columns that floats next to each other */
+ .column_cul2 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+	height:50%;
+}
+
+/* Style the images inside the grid */
+.column_cul2 img {
+    opacity: 0.8; 
+    cursor: pointer; 
+	filter:grayscale(100%);
+	width:100%;
+	height:100%;
+		transition:1s;	
+}
+
+.column_cul2 img:hover {
+    opacity: 1;
+	filter:grayscale(0);
+	 transform:scale(1.1);
+}
+/*for places.html*/
+/* Clear floats after the columns */
+.row1_cul2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2_cul2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container_cul2 {
+    position: fixed;
+    display: none;
+	width:900px;
+	height:900px;
+	margin:auto;
+	top:50px;
+	left:50px;
+	z-index:999;
+	
+}
+
+/* Expanding image text */
+#imgtext_cul2 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color:darkblue;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn_cul2 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+/*end of tab gallery of culture2.html*/
+
+
+
+

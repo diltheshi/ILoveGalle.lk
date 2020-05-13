@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style/home.css" type="text/css" rel="stylesheet"/>
+	<script src="java/places.js" type="text/javascript"></script>
+</head>
+
+<body id="places">
+	
+		<nav id="navbar">
+	
+			<ul>
+			<div id="placesLi">
+				<li><img src="images/logo1.jpg"></li>
+				<li><a href="db.php">Contacct Us</a></li>
+				<li><a href="culture.html">Culture</a></li>
+				<li><a href="gover.html">Governance</a></li>
+				<li><a href="weather.html">Weather</a></li>
+				<li id="actnav"><a>Places of Interest</a></li>
+				<li><a href="city.html">About Galle</a></li>
+				<li><a href="home.html">Home</a></li>
+			</div>
+			</ul>
+			
+		</nav>
+		
+	<!-- The expanding image container-->
+		<div style="text-align:center">
+  <h2 style="color:#87CEFA;text-shadow: 0px 0px 25px lightgreen;">Places Of Interest in Galle</h2>
+  
+</div>
+
+<!-- The four columns -->
+<div class="row">
+	
+  
+  <div class="column">
+    <img src="images/fort.jpg" alt="Sea side view of Galle Fort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="images/fort2.jpg" alt="Clock tower and massive Granite walls of Galle Fort" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="images/lightH.jpg" alt="Light house in Galle Fort" style="width:100%" onclick="myFunction(this);">
+  </div>
+ 
+	<div class="column">
+    <img src="images/nn1.jpg" alt="Arial View of Galle Fort" style="width:100%" onclick="myFunction(this);">
+  </div>
+ 
+ </div>
+ 
+ <div class="row2">
+	
+  <div class="column">
+    <img src="images/backbeach.jpg" alt="Sandy beaches in Galle" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="images/beach.jpg" alt="Unawatuna beach" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="images/ee.jpg" alt="Arch inside Galle Fort" style="width:100%" onclick="myFunction(this);">
+  </div>
+ 
+	<div class="column">
+    <img src="images/harbour.jpg" alt="Galle Harbour" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+		
+		
+		
+</body>
+
+</html>
